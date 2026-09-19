@@ -14,3 +14,6 @@ function matcha:setup/player_update_check_loop
 #Revoke Crystal heart advancement just in-case something goes wrong
 #This is temporary until I figure something else out, maybe a tag and scan situation but I want to be mindful of performance
 advancement revoke @a only matcha:mechanics/crystal_heart_used
+
+# Start favorite food setup
+function matcha:favorite_food/favorite_food_setup

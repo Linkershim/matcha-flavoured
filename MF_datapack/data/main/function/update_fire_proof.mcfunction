@@ -1,1 +1,0 @@
-item modify entity @s armor.head main:update_fire_proof

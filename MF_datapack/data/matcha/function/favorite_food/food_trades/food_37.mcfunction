@@ -1,0 +1,80 @@
+data modify entity @s Offers.Recipes append value {maxUses:1, sell:{count:1,id:"minecraft:emerald"}, \
+        buy:{count:1, "id": "minecraft:poisonous_potato",\
+		"components": {\
+			"minecraft:lore": [\
+				{\
+					"text": "❤",\
+					"color": "red",\
+					"italic": false\
+				},\
+				{\
+					"text": "🏃 +20% (0:30)",\
+					"color": "#37cafb",\
+					"italic": false\
+				},\
+				{\
+					"translate": "desc.kleispack.cleanses_maleffect",\
+					"color": "gray",\
+					"italic": false\
+				}\
+			],\
+			"minecraft:consumable": {\
+				"consume_seconds": 0.8,\
+				"animation": "drink",\
+				"sound": "minecraft:entity.generic.drink",\
+				"has_consume_particles": false,\
+				"on_consume_effects": [\
+					{\
+						"type": "minecraft:apply_effects",\
+						"effects": [\
+							{\
+								"id": "minecraft:regeneration",\
+								"amplifier": 2,\
+								"duration": 24,\
+								"show_particles": false,\
+								"show_icon": false\
+							},\
+							{\
+								"id": "minecraft:speed",\
+								"duration": 600,\
+								"show_particles": false,\
+								"show_icon": true\
+							}\
+						],\
+						"probability": 1\
+					},\
+					{\
+						"type": "minecraft:remove_effects",\
+						"effects": [\
+							"minecraft:poison",\
+							"minecraft:mining_fatigue",\
+							"minecraft:wither",\
+							"minecraft:weakness",\
+							"minecraft:bad_omen",\
+							"minecraft:blindness",\
+							"minecraft:darkness",\
+							"minecraft:infested",\
+							"minecraft:weaving",\
+							"minecraft:nausea",\
+							"minecraft:oozing",\
+							"minecraft:slowness"\
+						]\
+					}\
+				]\
+			},\
+			"minecraft:item_model": "matcha:honey_ginger_tea",\
+			"minecraft:item_name": {\
+				"translate": "item.kleispack.honey_ginger_tea"\
+			},\
+			"minecraft:food": {\
+				"nutrition": 0,\
+				"saturation": 0,\
+				"can_always_eat": true\
+			},\
+			"minecraft:use_remainder": {\
+				"id": "minecraft:glass_bottle"\
+			}\
+		}}}
+
+
+tag @s add foodChecked

@@ -4,10 +4,18 @@
 - Nat: Translation project lead, and other stuff
 - Imtlx: New Angler's Almanac, Fishing Sounds, Translation, and Github help
 - Vee Vaicekauskas: Background musics (Check out their bandcamp!: https://par4.bandcamp.com/)
-- DeBlezyBestie: Music Discs (Check out their YT!: https://www.youtube.com/@deblezyboi)
+- DeBlezyBestie: Music Discs
 - Bingbongbooper: Food Ideas (Their YT!: https://www.youtube.com/@bingbongbooper)
 - HapppySpud: Nether World Gen Gravel Remover, Post-Smithing Enchants, Random Asylum Seekers
 - Linkershim: Optimisations, Multiplayer Support and various other coding things
+- Pepurion: Optimisaitons, Rose Models
+- Fayranchia: Bug fixes
+- ReinIsNOTaDev: Optimisations, and Github Workflow nonsese
+- Fpekal: Bug fixes, optimisations, and working on 26.3 port
+- FloofShade: Item update trigger
+- EastMonster: Bug fixes
+- Voxybuns: Custom emojis and their implimentation
+- milo256: Dyanmic Multiplayer Sleep
 - All of the translation volunteers
 - Thank you so much everyone!
 
@@ -18,6 +26,20 @@ This symbol (💻) means the feature was changed/added by community code contrib
 
 This symbol (🖌️) means the art was added by community artists (music is art)
 
+
+## **Everything is Broken!!**
+- ITS OKAY! I promise
+- Hold the broken item in your hand and run:
+    * /trigger update_item
+- The broken item should update. If it doesn't please report that to the github. But, if you'd like a quick fix and want to throw away the broken item use
+    * /loot give @s loot 
+    * And start to type in the name of the broken item and it should autofill. Ex. The Divine Comedy is called matcha:treasure/divine_comedy
+#### WHY!?
+- In order to make the pack easier to use for other devlopers, and to maintain its own consistency, a TON of items had to move around. This meant namespace changes for almost everything. So the previous models either minecraft:x or main:x have been moved to matcha:x
+#### But I don't care and I dont want to deal with it
+- Fair. Just have both the most recent RP and the old RP on at the same time, with the most recent one being placed on top. This will cover up any broken items and make them seem normal. Just know that enchants will still be broken unless you use the trigger
+
+## Changelog
 ### Major Additions and Changes 
 * Electrum & Adamant Reworks (See Below)
 - New Intrinsic/Effect Icons! (They look awesome, 💻/🖌️, Voxybuns)
@@ -31,6 +53,14 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * Blast furnace recipe tweaked, Raw Diamonds now exist, and require blast furnaces to smelt
     * So no more naturally-occuring free diamonds should appear on surface structures
     * This should extend the copper and iron age a bit more, and when you finally have a blast furnace, feel good to finally be able to USE the diamonds you collected
+- Trigger Update system (💻, FloofShade)
+### New Death System
+- I am moving forward with the experimental death system. There has been so much postitive feedback for it, that it is staying. If you don't like it, I have some tips:
+    * Try to slow down. Make sure you're equiped enough, with enough food, tools, and weapons at your disposal before you go trying to progress. Progressing fast will make you loose hearts faster than progressing slow.
+    * Play on Easy. In easy mode, you won't go below 10 hearts
+    * Dont play on Hard! Hard is meant to be unfair. Its only for people like me who enjoy getting one-tapped by husks. I except to die at LEAST 3 times at the final boss of any game before I beat it. Anything less than that is cheap to me
+### Where is 26.3??
+- 26.3 is a major data-pack-breaking update. Its taking a long time to get things sorted out with the new syntax. Especially beucase matcha is so big. It will take time to come out. But trust me we are working on it. No one is more excited about yellow leaves than me, trust.
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
@@ -43,7 +73,7 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Feather Falling is better now (base damage reduction 12% -> 24%; max damage reduction 48% -> 72%)
 - Heart Decrementing is now only local not global (Per player not per world, I made this imagining a small group of friends playing together. Not large servers, this change was made to help with that, difficulty is still set at 5 hearts, but since this can be changed I dont think its a big issue)
 - Opal Earrings now only give Conduit Power when in water (quick patch job probably needs optimisation)
-- Zephyr enchantment reworked so that its 3 levels (👥💻, freshdoktor)
+- Zephyr enchantment reworked so that its 3 levels (👥, freshdoktor) (💻, Imtlx)
 - Elegy of the Abbey and Crete updated to their new versions
 - Bulk Blocks now unpack directly into your inventory (💻, Linkershim)
 - All Mason trades are now Bulk Blocks (💻, Linkershim)
@@ -69,7 +99,11 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - The Quran and Tanakh added to trial chamber loot (Temp fix)
 - Post-dragon, Abbeys can still spawn mobs
 - Ofuda trades now require Crystal hearts
-
+- Cyan and Normal Rose can now be placed in item frame with their own models (💻/🖌️, pepurion)
+- Day/Night extender now uses timelines (💻, ReinIsNOTaDev)
+- Trims now supported on custom armours (💻, Tralomine)
+- Sleeping at night will wake you up in morning, but sleeping in the day still skips 12 hours (💻, milo256)
+- Amnestics no longer reset villager XP BUT beucase of how villager trading work, they won't re-unlock the new items until you trade with them for each level at least once (Best I can do rn)
 
 #### Cooking Changes & Additions 
 
@@ -87,6 +121,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * ✟ 3 & 4 - effect/0.5s
 - Warding removed from Electrum Tools, the focus should be on their Fortune properties
 - Warding Shield nerfed from ✟ 2 -> ✟ 1 since warding now stacks
+- Warding will prioritise certain things in-order (💻, Linkershim)
+    * Copper-wearing mobs will be targeted first, included armour stand, they act as a magic lightning rod, nullifing its effects
+    * Secondarily, the Wither
+    * Lastly, the closest undead mob
 
 #### Adamant & DOOM!
 - Adamant's intrinisc has been reworked into DOOM! (👥, CHECK WHO SUGGESTED THIS, AND EMAIL IF ITS OKAY TO CREDIT)
@@ -119,11 +157,13 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Allays did not spawn in The Abbey, they now spawn on generation instead
 - "Bonfire Lit" Advancement works now
 - Post-dragon, abbey mobs would vanish, this is no longer true
-#### Lang
-- Warding Shield, Sword, Silver Sword now uses translate
-#### Recipe Unlocks Fixed
-
-
+- Snowballs and Enderpearls sometimes didn't stack to 64 (💻, HapppySpud)
+- Massive lag spikes after ender dragon is killed, this bug was identified and...fixed? (💻, HapppySpud)
+    * Happpy IDed the bug and I assume it is fixed, but we still need testing to make sure
+- Many bugs for Crystal hearts, Doom, etc, more and more (💻, Linkershim)
+- Removed Beacon kindling from rooted dirt group (💻, fpekal)
+- fix another fishing typo that makes the advancement not unlockable (💻, Tralomine) 
+- Pride Banners and shields REfixed (💻, Fayranchia)
 
 #### Texture Changes
 - Removed Redstone Particles
@@ -134,9 +174,15 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Skeletons (for Lore)
 
 #### Removed 
+- Estus Flask, I want food to be most important, encourage players to actually make farms and ranches
 
 ### Technical Changes 
 - Moved all assets and data into "matcha" namespace. Main no longer exists (Technically it does for enchantment updates but it will be removed entirely soon)
+
+Many suggestions I have taken note of but have not added yet, EX. craftable fortune III, but this is being pushed back to the next update (scope creep is real)
+
+There are also plenty of changes I forgot here. Beucase this move from main was so chaotic, a lot got lost in the crossfire. If a bug was fixed from the previous alpha, or fixed from the internal moving of things around, it was really hard to tell when all was said and done. Hopefully this won't happen again.
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -154,14 +200,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
 ## BUGS
 -
 
-## Testing Needed
-- All LTs
-- Fishing treasure LT (Does it give the buried treasure?)
-
-
 
 ## 26.3
 - Poplar leaves crafting needs to be added to adv
+- Poplar Leaves LTs need to be added
 - All concrete and wool needs to be in stonecutter
 
 
