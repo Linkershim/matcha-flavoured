@@ -15,7 +15,7 @@
 	"result": {
 		"components": {
 			"minecraft:stored_enchantments": {
-				"main:zephyr": 1
+				"matcha:zephyr": 1
 			},
 			"minecraft:item_name": {
 				"translate": "item.kleispack.blessing"

@@ -16,7 +16,7 @@
 		"components": {
 			"minecraft:stored_enchantments": {
 				"minecraft:frost_walker": 2,
-				"main:freezing_protection": 2
+				"matcha:freezing_protection": 2
 			},
 			"minecraft:item_name": {
 				"translate": "item.kleispack.blessing"

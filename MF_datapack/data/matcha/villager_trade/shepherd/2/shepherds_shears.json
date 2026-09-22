@@ -9,8 +9,7 @@
 			"minecraft:max_damage": 3000,
 			"minecraft:repairable": {
 				"items": [
-					"minecraft:iron_nugget",
-					"minecraft:iron_ingot"
+				  "minecraft:copper_block"
 				]
 			},
 			"minecraft:enchantments": {

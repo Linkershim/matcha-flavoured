@@ -78,7 +78,7 @@
 			"minecraft:item_model": "matcha:steel_leggings",
 			"minecraft:equippable": {
 				"slot": "legs",
-				"asset_id": "minecraft:steel"
+				"asset_id": "matcha:steel"
 			},
 			"minecraft:repairable": {
 				"items": [

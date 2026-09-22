@@ -78,7 +78,7 @@
 			"minecraft:item_model": "matcha:steel_helmet",
 			"minecraft:equippable": {
 				"slot": "head",
-				"asset_id": "minecraft:steel"
+				"asset_id": "matcha:steel"
 			},
 			"minecraft:repairable": {
 				"items": [

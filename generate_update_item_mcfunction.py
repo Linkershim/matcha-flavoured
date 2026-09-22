@@ -1,8 +1,6 @@
 # Created using Python 3.14.7
 import json, os
 
-# This setting checks for the item ID instead if there was no item_name in the recipe and no other item with that id was found in the selected recipe folders
-USE_ID_OPTIONALLY = True
 # Recipe paths for the generation
 RECIPE_BASE_PATH = os.path.join("MF_datapack", "data", "matcha", "recipe")
 RECIPE_PATHS = [
@@ -12,6 +10,7 @@ RECIPE_PATHS = [
     os.path.join(RECIPE_BASE_PATH, "food", "crafting"),
     os.path.join(RECIPE_BASE_PATH, "food", "kiln"),
     os.path.join(RECIPE_BASE_PATH, "food", "oven"),
+    os.path.join("MF_datapack", "data", "matcha", "villager_trade")
     ]
 # Update check_trigger.mcfunction
 CHECK_TRIGGER_LOCATION = os.path.join("MF_datapack", "data", "matcha", "function", "update_old_items", "check_trigger.mcfunction")
@@ -33,10 +32,11 @@ print(f"update_held_item.mcfunction located at: {UPDATE_HELD_LOCATION}\n")
 output = open(UPDATE_HELD_LOCATION, "w", encoding="utf-8")
 
 # Save selected item identifiers to storage for more performance
-output.write('data modify storage matcha:update_item id set value ""\n')
-output.write('data modify storage matcha:update_item translate set value ""\n')
-output.write('data modify storage matcha:update_item id set from entity @s SelectedItem.id\n')
+output.write('data remove storage matcha:update_item translate\n')
 output.write('data modify storage matcha:update_item translate set from entity @s SelectedItem.components.minecraft:item_name.translate\n')
+# early return if item has no translate
+output.write('execute unless data storage matcha:update_item translate run tellraw @s {"text":"The held item cannot be updated because it is missing a translation key.","color":"red"}\n')
+output.write('execute unless data storage matcha:update_item translate run return fail\n')
 output.write('data remove storage matcha:update_item item\n')
 # Go trough recipe directories and copy data from the json files
 skipped_file_count = 0
@@ -46,14 +46,24 @@ item_ids_no_name_to_path = {}
 item_ids_with_name = set()
 known_names = set()
 final_jsons = []
+# recursively search files
+def list_files_walk(path):
+    found_files = []
+    for entry in os.listdir(path):
+        full_path = os.path.join(path, entry)
+        if os.path.isdir(full_path):
+            found_files = found_files + list_files_walk(full_path)
+        else:
+            found_files.append(full_path)
+    return found_files
 # filter jsons that don't have components or no item name
 for folder in RECIPE_PATHS:
-    files = os.listdir(folder)
+    files = list_files_walk(folder)
     for file in files:
         if not file.endswith(".json"): continue
-        path = os.path.join(folder, file)
-        open_file = open(path, "r", encoding="utf-8")
-        result_data = json.load(open_file)["result"]
+        open_file = open(file, "r", encoding="utf-8")
+        json_data = json.load(open_file)
+        result_data = json_data["result"] if "result" in json_data else json_data["gives"]
         if not "components" in result_data:
             skipped_file_count += 1
             files_without_components.append(file)
@@ -63,7 +73,7 @@ for folder in RECIPE_PATHS:
         if not "minecraft:item_name" in components:
             skipped_file_count += 1
             files_without_item_name[result_data["id"]] = file
-            item_ids_no_name_to_path[result_data["id"]] = path
+            item_ids_no_name_to_path[result_data["id"]] = file
             open_file.close()
             continue
         if not "translate" in components["minecraft:item_name"]:
@@ -76,38 +86,26 @@ for folder in RECIPE_PATHS:
         else:
             open_file.close()
             continue
-        final_jsons.append(path)
+        final_jsons.append(file)
         item_ids_with_name.add(result_data["id"])
         open_file.close()
-# filter item ids that are already used in a named item
-item_ids = item_ids_no_name_to_path.keys()
-for mc_id in item_ids:
-    if not mc_id in item_ids_with_name and USE_ID_OPTIONALLY:
-        final_jsons.append(item_ids_no_name_to_path[mc_id])
-        skipped_file_count -= 1
-        files_without_item_name.pop(mc_id)
 
 # create data commands using the final jsons and save enchantments for the next step
 enchantments = {}
 STORED_ENCH = "minecraft:stored_enchantments"
 ENCH = "minecraft:enchantments"
-ID_CHECKED_START = 'execute if data storage matcha:update_item {id:"'
-ID_CHECKED_END = '"}'
 NAME_CHECKED_START = 'execute if data storage matcha:update_item {translate:"'
 NAME_CHECKED_END = '"}'
 DATA_MERGE = ' run data modify storage matcha:update_item item set value '
 for file in final_jsons:
     open_file = open(file, "r", encoding="utf-8")
-    result_data = json.load(open_file)["result"]
+    json_data = json.load(open_file)
+    result_data = json_data["result"] if "result" in json_data else json_data["gives"]
     components = result_data["components"]
     item_id = result_data["id"]
 
-    hand_check = ""
-    if not "minecraft:item_name" in components:
-        hand_check = ID_CHECKED_START + item_id + ID_CHECKED_END
-    else:
-        item_name = components["minecraft:item_name"]["translate"]
-        hand_check = NAME_CHECKED_START + item_name + NAME_CHECKED_END
+    item_name = components["minecraft:item_name"]["translate"]
+    hand_check = NAME_CHECKED_START + item_name + NAME_CHECKED_END
     # switch stored_enchantments to enchantments
     if STORED_ENCH in components:
         components[ENCH] = components[STORED_ENCH]
@@ -139,6 +137,8 @@ MERGE_DATA = [
     'scoreboard players operation #damage update_item /= #1000 update_item\n',
     'execute store result storage matcha:update_item item.components.minecraft:damage int 1 run scoreboard players get #damage update_item\n',
     'data modify storage matcha:update_item item.components.minecraft:enchantments merge from entity @s SelectedItem.components.minecraft:enchantments\n',
+    'data modify storage matcha:update_item item.components.minecraft:trim merge from entity @s SelectedItem.components.minecraft:trim\n',
+    'data modify storage matcha:update_item item.components.minecraft:lodestone_tracker merge from entity @s SelectedItem.components.minecraft:lodestone_tracker\n',
     ]
 output.writelines(MERGE_DATA)
 
@@ -179,7 +179,7 @@ print("Don't be alarmed! Most recipe files are just basic items that do not need
 print('\n')
 
 while True:
-    user_input = input(f"Type '{LIST_NO_COMP}' to view files that were skipped because they have no components.\nType '{LIST_NO_NAME}' to view files that were skipped because they have no item name and their id is conflicting with a different item with a name.\nType '{QUIT}' to exit (or just close the program).\n")
+    user_input = input(f"Type '{LIST_NO_COMP}' to view files that were skipped because they have no components.\nType '{LIST_NO_NAME}' to view files that were skipped because they have no item name translation key.\nType '{QUIT}' to exit (or just close the program).\n")
     if user_input == LIST_NO_COMP:
         for file in files_without_components:
             print(file)

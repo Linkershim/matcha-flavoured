@@ -14,7 +14,7 @@
 	"result": {
 		"components": {
 			"minecraft:stored_enchantments": {
-				"main:anemos": 1,
+				"matcha:anemos": 1,
 				"minecraft:wind_burst": 1
 			},
 			"minecraft:item_name": {

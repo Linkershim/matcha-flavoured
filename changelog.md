@@ -198,13 +198,11 @@ There are also plenty of changes I forgot here. Beucase this move from main was 
 # DOCKET (MUST be done before next release)
   
 ## BUGS
--
-
+- Double check that the update Floof did didn't override the matcha:steel It shouldn't have but just in case
 
 ## 26.3
 - Poplar leaves crafting needs to be added to adv
 - Poplar Leaves LTs need to be added
-- All concrete and wool needs to be in stonecutter
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -290,11 +288,17 @@ There are also plenty of changes I forgot here. Beucase this move from main was 
 - Have spawners (aside from dungeons, wait no LT can't read entity data...)
     * I wanted to have a way for spawners to make mobs that won't drop anything, by spawning them with a tag
     * But I tag can't influence loot tables I dont think.
-
-While much advamcement has been made toward making the learning process of the pack much more streamlined, encouraging players to explore in the hopes of learning more esoteric or even baseline batapack knowledge may be worthwhile. Little notes adding lore, or explaining mechanics; the diary of a chef going on about a recipe or a miner speaking about finding silver hugh up in the mountains."
 - Cats traded by farmer?
 - Wandering Trader trade more than just village maps
 
+
+## Fun/Stretch Additions
+- Re-add Copper Horns, and leave sheet music as treasure, which can be smithed (???? like have one spawn egg as sheet msuic and give each an enchant or soemthing, trigger adv on craft, and merge the data)
+   - And use the unused copper horn sounds! The really cool ones!
+
+##World Gen
+- Dense Poplars
+- Swampier Swamps
 
 ## Adv
 - Get Full Health Advancement
