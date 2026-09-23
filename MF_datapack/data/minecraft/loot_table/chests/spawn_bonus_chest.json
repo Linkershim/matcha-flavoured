@@ -2,25 +2,22 @@
 	"type": "minecraft:chest",
 	"pools": [
 		{
+			"rolls": 3,
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:equipment/wood/tool",
-					"weight": 3
+					"value": "matcha:equipment/wood/tool"
 				}
-			],
-			"rolls": 3
+			]
 		},
 		{
+			"rolls": 5,
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/apple",
-					"functions": [],
-					"weight": 5
+					"value": "matcha:food/minecraft/apple"
 				}
-			],
-			"rolls": 5
+			]
 		},
 		{
 			"entries": [
