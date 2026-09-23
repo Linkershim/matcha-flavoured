@@ -1,5 +1,6 @@
 {
 	"type": "minecraft:block",
+	"random_sequence": "minecraft:blocks/carrots",
 	"functions": [
 		{
 			"function": "minecraft:explosion_decay"
@@ -7,18 +8,16 @@
 	],
 	"pools": [
 		{
-			"bonus_rolls": 0,
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/carrot",
-					"functions": []
+					"value": "matcha:food/minecraft/carrot"
 				}
-			],
-			"rolls": 1
+			]
 		},
 		{
-			"bonus_rolls": 0,
+			"rolls": 1,
 			"conditions": [
 				{
 					"block": "minecraft:carrots",
@@ -31,7 +30,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/carrot",
+					"value": "matcha:food/minecraft/carrot",
 					"functions": [
 						{
 							"enchantment": "minecraft:fortune",
@@ -53,9 +52,7 @@
 						}
 					]
 				}
-			],
-			"rolls": 1
+			]
 		}
-	],
-	"random_sequence": "minecraft:blocks/carrots"
+	]
 }

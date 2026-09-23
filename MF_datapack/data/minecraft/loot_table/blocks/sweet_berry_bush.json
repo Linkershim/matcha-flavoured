@@ -1,5 +1,6 @@
 {
 	"type": "minecraft:block",
+	"random_sequence": "minecraft:blocks/sweet_berry_bush",
 	"functions": [
 		{
 			"function": "minecraft:explosion_decay"
@@ -7,7 +8,7 @@
 	],
 	"pools": [
 		{
-			"bonus_rolls": 0,
+			"rolls": 1,
 			"conditions": [
 				{
 					"block": "minecraft:sweet_berry_bush",
@@ -20,19 +21,16 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/sweet_berries",
-					"functions": []
+					"value": "matcha:food/minecraft/sweet_berries"
 				}
 			],
 			"functions": [
 				{
-					"add": false,
+					"function": "minecraft:set_count",
 					"count": {
-						"type": "minecraft:uniform",
 						"max": 3,
 						"min": 2
-					},
-					"function": "minecraft:set_count"
+					}
 				},
 				{
 					"enchantment": "minecraft:fortune",
@@ -50,11 +48,10 @@
 						"bonusMultiplier": 1
 					}
 				}
-			],
-			"rolls": 1
+			]
 		},
 		{
-			"bonus_rolls": 0,
+			"rolls": 1,
 			"conditions": [
 				{
 					"block": "minecraft:sweet_berry_bush",
@@ -67,19 +64,16 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/sweet_berries",
-					"functions": []
+					"value": "matcha:food/minecraft/sweet_berries"
 				}
 			],
 			"functions": [
 				{
-					"add": false,
+					"function": "minecraft:set_count",
 					"count": {
-						"type": "minecraft:uniform",
 						"max": 2,
 						"min": 1
-					},
-					"function": "minecraft:set_count"
+					}
 				},
 				{
 					"enchantment": "minecraft:fortune",
@@ -97,9 +91,7 @@
 						"bonusMultiplier": 1
 					}
 				}
-			],
-			"rolls": 1
+			]
 		}
-	],
-	"random_sequence": "minecraft:blocks/sweet_berry_bush"
+	]
 }
