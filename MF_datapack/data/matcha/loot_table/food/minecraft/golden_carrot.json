@@ -19,9 +19,7 @@
 									},
 									{
 										"translate": "effect.kleispack.night_vision",
-										"with": [
-											"0:30"
-										],
+										"with": ["0:30"],
 										"color": "green",
 										"italic": false
 									}

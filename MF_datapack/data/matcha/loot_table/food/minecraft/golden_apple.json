@@ -24,9 +24,7 @@
 									},
 									{
 										"translate": "effect.kleispack.regeneration",
-										"with": [
-											"0:30"
-										],
+										"with": ["0:30"],
 										"color": "#e85e8f",
 										"italic": false
 									}
@@ -47,16 +45,16 @@
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:regeneration",
+													"id": "minecraft:absorption",
 													"amplifier": 0,
-													"duration": 600,
+													"duration": 2400,
 													"show_particles": false,
 													"show_icon": true
 												},
 												{
-													"id": "minecraft:absorption",
+													"id": "minecraft:regeneration",
 													"amplifier": 0,
-													"duration": 2400,
+													"duration": 600,
 													"show_particles": false,
 													"show_icon": true
 												}

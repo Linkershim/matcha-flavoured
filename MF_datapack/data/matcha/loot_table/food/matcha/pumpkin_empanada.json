@@ -23,9 +23,7 @@
 									},
 									{
 										"translate": "effect.kleispack.resistance",
-										"with": [
-											"8:00"
-										],
+										"with": ["8:00"],
 										"color": "blue",
 										"italic": false
 									}
@@ -38,18 +36,18 @@
 											"type": "minecraft:apply_effects",
 											"effects": [
 												{
-													"id": "minecraft:resistance",
-													"amplifier": 0,
-													"duration": 9600,
-													"show_particles": false,
-													"show_icon": true
-												},
-												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
 													"duration": 96,
 													"show_particles": false,
 													"show_icon": false
+												},
+												{
+													"id": "minecraft:resistance",
+													"amplifier": 0,
+													"duration": 9600,
+													"show_particles": false,
+													"show_icon": true
 												}
 											]
 										}

@@ -23,9 +23,7 @@
 									},
 									{
 										"translate": "effect.kleispack.aura",
-										"with": [
-											"0:30"
-										],
+										"with": ["0:30"],
 										"color": "#0fffa3",
 										"italic": false
 									}

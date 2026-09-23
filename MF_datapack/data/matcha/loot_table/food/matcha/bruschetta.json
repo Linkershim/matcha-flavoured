@@ -23,9 +23,7 @@
 									},
 									{
 										"translate": "effect.kleispack.strength_2",
-										"with": [
-											"2:30"
-										],
+										"with": ["2:30"],
 										"color": "#e65f33",
 										"italic": false
 									}
@@ -38,18 +36,18 @@
 											"type": "minecraft:apply_effects",
 											"effects": [
 												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
-													"show_particles": false,
-													"show_icon": true
-												},
-												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
 													"duration": 96,
 													"show_particles": false,
 													"show_icon": false
+												},
+												{
+													"id": "minecraft:strength",
+													"amplifier": 1,
+													"duration": 3000,
+													"show_particles": false,
+													"show_icon": true
 												}
 											]
 										}

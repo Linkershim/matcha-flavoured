@@ -24,25 +24,19 @@
 									},
 									{
 										"translate": "effect.kleispack.regeneration_2",
-										"with": [
-											"0:30"
-										],
+										"with": ["0:30"],
 										"color": "#e85e8f",
 										"italic": false
 									},
 									{
 										"translate": "effect.kleispack.fire_resistance",
-										"with": [
-											"5:00"
-										],
+										"with": ["5:00"],
 										"color": "gold",
 										"italic": false
 									},
 									{
 										"translate": "effect.kleispack.resistance",
-										"with": [
-											"5:00"
-										],
+										"with": ["5:00"],
 										"color": "blue",
 										"italic": false
 									}
@@ -63,15 +57,15 @@
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:regeneration",
-													"amplifier": 1,
-													"duration": 600,
-													"show_particles": false
-												},
-												{
 													"id": "minecraft:absorption",
 													"amplifier": 3,
 													"duration": 2400,
+													"show_particles": false
+												},
+												{
+													"id": "minecraft:regeneration",
+													"amplifier": 1,
+													"duration": 600,
 													"show_particles": false
 												},
 												{
