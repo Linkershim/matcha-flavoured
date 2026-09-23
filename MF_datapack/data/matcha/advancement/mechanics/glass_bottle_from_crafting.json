@@ -501,131 +501,131 @@
 		"made_glow_berry_crumble": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/glow_berry_crumble"
+				"recipe_id": "matcha:food/crafting/glow_berry_crumble"
 			}
 			
 		},
 		"made_latkes": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/latke"
+				"recipe_id": "matcha:food/crafting/latke"
 			}
 			
 		},
 		"made_warped_stroganoff": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/warped_stroganoff"
+				"recipe_id": "matcha:food/crafting/warped_stroganoff"
 			}
 			
 		},
 		"made_chorus_mochi": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/chorus_mochi"
+				"recipe_id": "matcha:food/crafting/chorus_mochi"
 			}
 			
 		},
 		"made_dough_from_water": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/dough_from_water"
+				"recipe_id": "matcha:food/crafting/dough_from_water"
 			}
 		},
 		"made_cake": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/cake"
+				"recipe_id": "matcha:food/crafting/cake"
 			}
 		},
 		"made_hell_bound_book": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "blessings:hell_bound_book"
+				"recipe_id": "matcha:blessing/hell_bound_book"
 			}
 		},
 		"seitan": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/seitan"
+				"recipe_id": "matcha:food/crafting/seitan"
 			}
 		},
 		"stego_chicken_nugget": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/stego_chicken_nugget"
+				"recipe_id": "matcha:food/crafting/stego_chicken_nugget"
 			}
 		},
 		"tricero_chicken_nugget": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/tricero_chicken_nugget"
+				"recipe_id": "matcha:food/crafting/tricero_chicken_nugget"
 			}
 		},
 		"brachio_chicken_nugget": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/brachio_chicken_nugget"
+				"recipe_id": "matcha:food/crafting/brachio_chicken_nugget"
 			}
 		},
 		"ptero_chicken_nugget": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/ptero_chicken_nugget"
+				"recipe_id": "matcha:food/crafting/ptero_chicken_nugget"
 			}
 		},
 		"gimmari": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/gimmari"
+				"recipe_id": "matcha:food/crafting/gimmari"
 			}
 		},
 		"pupusa": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/pupusa"
+				"recipe_id": "matcha:food/crafting/pupusa"
 			}
 		},
 		"uncooked_curry": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/uncooked_curry"
+				"recipe_id": "matcha:food/crafting/uncooked_curry"
 			}
 		},
 		"uncooked_ramen": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/uncooked_ramen"
+				"recipe_id": "matcha:food/crafting/uncooked_ramen"
 			}
 		},
 		"lumpia": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/lumpia"
+				"recipe_id": "matcha:food/crafting/lumpia"
 			}
 		},
 		"bunuelo": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/bunuelo"
+				"recipe_id": "matcha:food/crafting/bunuelo"
 			}
 		},
 		"fish_and_chips": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/fish_and_chips"
+				"recipe_id": "matcha:food/crafting/fish_and_chips"
 			}
 		},
 		"oatmeal": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/oatmeal"
+				"recipe_id": "matcha:food/crafting/oatmeal"
 			}
 		},
 		"ice_cream": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "main:food/crafting/ice_cream"
+				"recipe_id": "matcha:food/crafting/ice_cream"
 			}
 		}
 	},

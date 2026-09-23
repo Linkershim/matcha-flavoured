@@ -1,2 +1,1 @@
-execute at @a run execute if items entity @p inventory.* minecraft:blaze_powder run function matcha:mechanics/estus/estus_effects
-execute at @a run execute if items entity @p hotbar.* minecraft:blaze_powder run function matcha:mechanics/estus/estus_effects
+execute if items entity @s container.* minecraft:blaze_powder run function matcha:mechanics/estus/estus_effects

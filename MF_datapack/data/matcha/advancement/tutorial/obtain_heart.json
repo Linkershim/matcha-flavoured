@@ -7,7 +7,7 @@
 				"items": [
 					{
 						"components": {
-							"minecraft:item_model": "heart_container"
+							"minecraft:item_model": "matcha:heart_container"
 						}
 					}
 				]
