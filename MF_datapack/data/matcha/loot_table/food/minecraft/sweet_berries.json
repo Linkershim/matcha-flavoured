@@ -3,22 +3,22 @@
 	"pools": [
 		{
 			"rolls": 1,
-			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:apple",
+					"name": "minecraft:sweet_berries",
 					"functions": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:lore": [
 									{
-										"text": "\uE030",
+										"text": "\uE032",
 										"color": "red",
 										"italic": false
 									}
 								],
+								"!minecraft:food": {},
 								"minecraft:consumable": {
 									"on_consume_effects": [
 										{
@@ -27,7 +27,7 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 24,
+													"duration": 12,
 													"show_particles": false,
 													"show_icon": false
 												}

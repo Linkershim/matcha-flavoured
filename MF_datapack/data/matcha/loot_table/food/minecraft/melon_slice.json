@@ -3,11 +3,10 @@
 	"pools": [
 		{
 			"rolls": 1,
-			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:carrot",
+					"name": "minecraft:melon_slice",
 					"functions": [
 						{
 							"function": "minecraft:set_components",
@@ -19,6 +18,7 @@
 										"italic": false
 									}
 								],
+								"!minecraft:food": {},
 								"minecraft:consumable": {
 									"on_consume_effects": [
 										{

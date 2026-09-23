@@ -3,7 +3,6 @@
 	"pools": [
 		{
 			"rolls": 1,
-			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -19,6 +18,7 @@
 										"italic": false
 									}
 								],
+								"!minecraft:food": {},
 								"minecraft:consumable": {
 									"on_consume_effects": [
 										{
