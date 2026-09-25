@@ -17,12 +17,12 @@
 		"components": {
 			"minecraft:lore": [
 				{
-					"text": "❤❤❤❤",
+					"text": "\uE030\uE030\uE030\uE030",
 					"color": "red",
 					"italic": false
 				},
 				{
-					"text": "❤❤❤❤ (3:00)",
+					"text": "\uE030\uE030\uE030\uE030 (3:00)",
 					"color": "gray",
 					"italic": false
 				}
