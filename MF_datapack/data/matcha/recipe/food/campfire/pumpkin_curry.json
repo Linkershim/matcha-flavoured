@@ -1,32 +1,33 @@
 {
-	"type": "minecraft:smelting",
+	"type": "minecraft:campfire_cooking",
 	"category": "food",
-	"cookingtime": 100,
+	"cookingtime": 300,
 	"experience": 0.35,
-	"ingredient": "minecraft:carrot",
+	"ingredient": "minecraft:ghast_spawn_egg",
 	"result": {
 		"id": "minecraft:poisonous_potato",
 		"components": {
-			"minecraft:item_model": "matcha:steamed_carrots",
+			"minecraft:item_model": "matcha:pumpkin_curry",
 			"minecraft:item_name": {
-				"translate": "item.kleispack.steamed_carrots"
+				"translate": "item.kleispack.pumpkin_curry"
 			},
 			"minecraft:lore": [
 				{
-					"text": "\uE030",
+					"text": "\uE030\uE030\uE030\uE030\uE030\uE030\uE030\uE030\uE030\uE030",
 					"color": "red",
 					"italic": false
 				},
 				{
-					"translate": "effect.kleispack.night_vision",
-					"with": ["0:10"],
-					"color": "green",
+					"translate": "effect.kleispack.resistance",
+					"with": ["20:00"],
+					"color": "blue",
 					"italic": false
 				}
 			],
 			"!minecraft:food": {},
 			"minecraft:consumable": {
-				"consume_seconds": 0.8,
+				"consume_seconds": 3.0,
+				"animation": "drink",
 				"has_consume_particles": true,
 				"on_consume_effects": [
 					{
@@ -35,20 +36,23 @@
 							{
 								"id": "minecraft:regeneration",
 								"amplifier": 2,
-								"duration": 24,
+								"duration": 240,
 								"show_particles": false,
 								"show_icon": false
 							},
 							{
-								"id": "minecraft:night_vision",
+								"id": "minecraft:resistance",
 								"amplifier": 0,
-								"duration": 200,
+								"duration": 24000,
 								"show_particles": false,
 								"show_icon": true
 							}
 						]
 					}
 				]
+			},
+			"minecraft:use_remainder": {
+				"id": "minecraft:bowl"
 			}
 		}
 	}

@@ -7,23 +7,27 @@
 	"result": {
 		"id": "minecraft:poisonous_potato",
 		"components": {
+			"minecraft:item_model": "matcha:braised_red_mushroom",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.braised_red_mushroom"
+			},
 			"minecraft:lore": [
 				{
-					"text": "❤",
+					"text": "\uE030",
 					"color": "red",
 					"italic": false
 				},
 				{
 					"translate": "effect.kleispack.poison",
-					"with": [
-						"0:30"
-					],
+					"with": ["0:30"],
 					"color": "#48a53b",
 					"italic": false
 				}
 			],
+			"!minecraft:food": {},
 			"minecraft:consumable": {
 				"consume_seconds": 0.8,
+				"has_consume_particles": true,
 				"on_consume_effects": [
 					{
 						"type": "minecraft:apply_effects",
@@ -41,19 +45,9 @@
 								"duration": 600,
 								"show_icon": true
 							}
-						],
-						"probability": 1
+						]
 					}
 				]
-			},
-			"minecraft:item_model": "matcha:braised_red_mushroom",
-			"minecraft:item_name": {
-				"translate": "item.kleispack.braised_red_mushroom"
-			},
-			"minecraft:food": {
-				"nutrition": 0,
-				"saturation": 0,
-				"can_always_eat": true
 			}
 		}
 	}

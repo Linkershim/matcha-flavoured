@@ -9,12 +9,15 @@
 		"components": {
 			"minecraft:lore": [
 				{
-					"text": "❤❤",
+					"text": "\uE030\uE030",
 					"color": "red",
 					"italic": false
 				}
 			],
+			"!minecraft:food": {},
 			"minecraft:consumable": {
+				"consume_seconds": 1.6,
+				"has_consume_particles": true,
 				"on_consume_effects": [
 					{
 						"type": "minecraft:apply_effects",
@@ -26,16 +29,9 @@
 								"show_particles": false,
 								"show_icon": false
 							}
-						],
-						"probability": 1
+						]
 					}
 				]
-			},
-			"minecraft:item_model": "minecraft:cooked_mutton",
-			"minecraft:food": {
-				"nutrition": 0,
-				"saturation": 0,
-				"can_always_eat": true
 			}
 		}
 	}

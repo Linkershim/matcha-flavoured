@@ -7,13 +7,18 @@
 	"result": {
 		"id": "minecraft:green_dye",
 		"components": {
+			"minecraft:item_model": "matcha:nopales",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.nopales"
+			},
 			"minecraft:lore": [
 				{
-					"text": "❤❤",
+					"text": "\uE030\uE030",
 					"color": "red",
 					"italic": false
 				}
 			],
+			"!minecraft:food": {},
 			"minecraft:consumable": {
 				"consume_seconds": 1.2,
 				"has_consume_particles": true,
@@ -28,20 +33,10 @@
 								"show_particles": false,
 								"show_icon": false
 							}
-						],
-						"probability": 1
+						]
 					}
 				]
-			},
-			"minecraft:food": {
-				"nutrition": 0,
-				"saturation": 0,
-				"can_always_eat": true
-			},
-			"minecraft:item_name": {
-				"translate": "item.kleispack.nopales"
-			},
-			"minecraft:item_model": "matcha:nopales"
+			}
 		}
 	}
 }

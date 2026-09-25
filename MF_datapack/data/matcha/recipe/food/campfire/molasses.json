@@ -1,13 +1,13 @@
 {
 	"type": "minecraft:campfire_cooking",
 	"group": "molasses",
+	"cookingtime": 100,
+	"experience": 0.01,
 	"ingredient": "minecraft:sugar_cane",
 	"result": {
 		"id": "minecraft:piglin_spawn_egg",
 		"components": {
 			"!minecraft:entity_data": {}
 		}
-	},
-	"experience": 0.01,
-	"cookingtime": 100
+	}
 }

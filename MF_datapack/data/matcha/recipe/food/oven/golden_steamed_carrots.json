@@ -7,21 +7,25 @@
 	"result": {
 		"id": "minecraft:poisonous_potato",
 		"components": {
+			"minecraft:item_model": "matcha:golden_steamed_carrots",
+			"minecraft:item_name": {
+				"translate": "item.kleispack.golden_steamed_carrots",
+				"color": "yellow"
+			},
 			"minecraft:lore": [
 				{
-					"text": "❤",
+					"text": "\uE030",
 					"color": "red",
 					"italic": false
 				},
 				{
 					"translate": "effect.kleispack.night_vision",
-					"with": [
-						"1:00"
-					],
+					"with": ["1:00"],
 					"color": "green",
 					"italic": false
 				}
 			],
+			"!minecraft:food": {},
 			"minecraft:consumable": {
 				"consume_seconds": 0.8,
 				"has_consume_particles": true,
@@ -43,20 +47,9 @@
 								"show_particles": false,
 								"show_icon": true
 							}
-						],
-						"probability": 1
+						]
 					}
 				]
-			},
-			"minecraft:item_model": "matcha:golden_steamed_carrots",
-			"minecraft:item_name": {
-				"translate": "item.kleispack.golden_steamed_carrots",
-				"color": "yellow"
-			},
-			"minecraft:food": {
-				"nutrition": 0,
-				"saturation": 0,
-				"can_always_eat": true
 			}
 		}
 	}
