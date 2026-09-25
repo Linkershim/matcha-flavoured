@@ -45,6 +45,7 @@
 												},
 												{
 													"id": "minecraft:strength",
+													"amplifier": 0,
 													"duration": 6000,
 													"show_particles": false,
 													"show_icon": true
