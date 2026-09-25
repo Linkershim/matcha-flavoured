@@ -11,26 +11,27 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:crimson_stroganoff",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.crimson_stroganoff",
+									"color": "#c54457"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030\uE030\uE030\uE030\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"translate": "effect.kleispack.weakness",
+										"with": ["5:00"],
+										"color": "#b6a09a",
 										"italic": false
 									}
 								],
 								"!minecraft:food": {},
 								"minecraft:consumable": {
-									"consume_seconds": 1.6,
+									"consume_seconds": 1.8,
 									"has_consume_particles": true,
 									"on_consume_effects": [
 										{
@@ -39,20 +40,23 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 144,
 													"show_particles": false,
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"id": "minecraft:weakness",
+													"amplifier": 0,
+													"duration": 6000,
 													"show_particles": false,
 													"show_icon": true
 												}
 											]
 										}
 									]
+								},
+								"minecraft:use_remainder": {
+									"id": "minecraft:bowl"
 								}
 							}
 						}

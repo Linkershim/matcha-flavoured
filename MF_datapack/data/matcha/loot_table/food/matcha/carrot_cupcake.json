@@ -11,9 +11,9 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:carrot_cupcake",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.carrot_cupcake"
 								},
 								"minecraft:lore": [
 									{
@@ -22,9 +22,9 @@
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"translate": "effect.kleispack.night_vision",
+										"with": ["10:00"],
+										"color": "green",
 										"italic": false
 									}
 								],
@@ -44,9 +44,9 @@
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"id": "minecraft:night_vision",
+													"amplifier": 0,
+													"duration": 12000,
 													"show_particles": false,
 													"show_icon": true
 												}

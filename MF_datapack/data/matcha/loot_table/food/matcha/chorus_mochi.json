@@ -11,26 +11,27 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:chorus_mochi",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.chorus_mochi",
+									"color": "#ae6cbc"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"translate": "effect.kleispack.levitation_30",
+										"with": ["0:01"],
+										"color": "#ae6cbc",
 										"italic": false
 									}
 								],
 								"!minecraft:food": {},
 								"minecraft:consumable": {
-									"consume_seconds": 1.6,
+									"consume_seconds": 0.8,
 									"has_consume_particles": true,
 									"on_consume_effects": [
 										{
@@ -39,14 +40,14 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 48,
 													"show_particles": false,
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"id": "minecraft:levitation",
+													"amplifier": 29,
+													"duration": 20,
 													"show_particles": false,
 													"show_icon": true
 												}

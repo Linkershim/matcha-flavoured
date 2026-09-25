@@ -11,20 +11,20 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:brownie",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.brownie"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
+										"translate": "effect.kleispack.haste_2",
 										"with": ["2:30"],
-										"color": "#e65f33",
+										"color": "yellow",
 										"italic": false
 									}
 								],
@@ -39,12 +39,12 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 72,
 													"show_particles": false,
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
+													"id": "minecraft:haste",
 													"amplifier": 1,
 													"duration": 3000,
 													"show_particles": false,

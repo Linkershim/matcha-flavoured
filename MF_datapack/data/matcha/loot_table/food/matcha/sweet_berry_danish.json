@@ -11,9 +11,9 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:sweet_berry_danish",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.sweet_berry_danish"
 								},
 								"minecraft:lore": [
 									{
@@ -22,9 +22,8 @@
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"text": "\uE030\uE030\uE030\uE030 (8:00)",
+										"color": "gray",
 										"italic": false
 									}
 								],
@@ -44,9 +43,9 @@
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
+													"id": "minecraft:health_boost",
 													"amplifier": 1,
-													"duration": 3000,
+													"duration": 9600,
 													"show_particles": false,
 													"show_icon": true
 												}

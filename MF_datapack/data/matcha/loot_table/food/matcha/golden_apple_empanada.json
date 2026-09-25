@@ -11,9 +11,10 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:golden_apple_empanada",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.golden_empanada",
+									"color": "yellow"
 								},
 								"minecraft:lore": [
 									{
@@ -22,9 +23,14 @@
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"text": "\uE030\uE030\uE030\uE030",
+										"color": "aqua",
+										"italic": false
+									},
+									{
+										"translate": "effect.kleispack.regeneration_2",
+										"with": ["0:45"],
+										"color": "#e85e8f",
 										"italic": false
 									}
 								],
@@ -44,9 +50,16 @@
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
+													"id": "minecraft:absorption",
 													"amplifier": 1,
-													"duration": 3000,
+													"duration": 4800,
+													"show_particles": false,
+													"show_icon": true
+												},
+												{
+													"id": "minecraft:regeneration",
+													"amplifier": 1,
+													"duration": 900,
 													"show_particles": false,
 													"show_icon": true
 												}

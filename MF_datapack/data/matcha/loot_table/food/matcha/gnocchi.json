@@ -11,26 +11,21 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:gnocchi",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.gnocchi",
+									"color": "#e1bc62"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030\uE030\uE030\uE030\uE030\uE030\uE030\uE030",
 										"color": "red",
-										"italic": false
-									},
-									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
 										"italic": false
 									}
 								],
 								"!minecraft:food": {},
 								"minecraft:consumable": {
-									"consume_seconds": 1.6,
+									"consume_seconds": 2.0,
 									"has_consume_particles": true,
 									"on_consume_effects": [
 										{
@@ -39,20 +34,16 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 192,
 													"show_particles": false,
 													"show_icon": false
-												},
-												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
-													"show_particles": false,
-													"show_icon": true
 												}
 											]
 										}
 									]
+								},
+								"minecraft:use_remainder": {
+									"id": "minecraft:bowl"
 								}
 							}
 						}

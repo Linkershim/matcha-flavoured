@@ -11,27 +11,34 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:honey_ginger_tea",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.honey_ginger_tea"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"translate": "effect.kleispack.speed",
+										"with":["0:30"],
+										"color": "#37cafb",
+										"italic": false
+									},
+									{
+										"translate": "desc.kleispack.cleanses_maleffect",
+										"color": "gray",
 										"italic": false
 									}
 								],
 								"!minecraft:food": {},
 								"minecraft:consumable": {
-									"consume_seconds": 1.6,
-									"has_consume_particles": true,
+									"consume_seconds": 0.8,
+									"animation": "drink",
+									"sound": "minecraft:entity.generic.drink",
+									"has_consume_particles": false,
 									"on_consume_effects": [
 										{
 											"type": "minecraft:apply_effects",
@@ -39,20 +46,27 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 24,
 													"show_particles": false,
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"id": "minecraft:speed",
+													"amplifier": 0,
+													"duration": 600,
 													"show_particles": false,
 													"show_icon": true
 												}
 											]
+										},
+										{
+											"type": "minecraft:remove_effects",
+											"effects": "#matcha:harmful"
 										}
 									]
+								},
+								"minecraft:use_remainder": {
+									"id": "minecraft:glass_bottle"
 								}
 							}
 						}

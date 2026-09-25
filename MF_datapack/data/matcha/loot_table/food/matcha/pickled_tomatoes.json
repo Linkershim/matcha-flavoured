@@ -11,19 +11,19 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:pickled_tomatoes",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.pickled_tomatoes"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
+										"translate": "effect.kleispack.strength",
+										"with": ["5:00"],
 										"color": "#e65f33",
 										"italic": false
 									}
@@ -31,7 +31,7 @@
 								"!minecraft:food": {},
 								"minecraft:consumable": {
 									"consume_seconds": 1.6,
-									"has_consume_particles": true,
+									"has_consume_particles": false,
 									"on_consume_effects": [
 										{
 											"type": "minecraft:apply_effects",
@@ -39,20 +39,22 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 72,
 													"show_particles": false,
 													"show_icon": false
 												},
 												{
 													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"duration": 6000,
 													"show_particles": false,
 													"show_icon": true
 												}
 											]
 										}
 									]
+								},
+								"minecraft:use_remainder": {
+									"id": "minecraft:glass_bottle"
 								}
 							}
 						}

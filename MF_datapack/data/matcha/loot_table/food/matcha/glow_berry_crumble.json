@@ -11,9 +11,9 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:glow_berry_crumble",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.glow_berry_crumble"
 								},
 								"minecraft:lore": [
 									{
@@ -22,9 +22,9 @@
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"translate": "effect.kleispack.aura",
+										"with": ["1:00"],
+										"color": "#0fffa3",
 										"italic": false
 									}
 								],
@@ -42,13 +42,6 @@
 													"duration": 96,
 													"show_particles": false,
 													"show_icon": false
-												},
-												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
-													"show_particles": false,
-													"show_icon": true
 												}
 											]
 										}

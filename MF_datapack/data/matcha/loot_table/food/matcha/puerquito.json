@@ -11,20 +11,20 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:puerquito",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.puerquito"
 								},
 								"minecraft:lore": [
 									{
-										"text": "\uE030\uE030\uE030\uE030",
+										"text": "\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
-										"color": "#e65f33",
+										"translate": "effect.kleispack.regeneration",
+										"with": ["0:30"],
+										"color": "#e85e8f",
 										"italic": false
 									}
 								],
@@ -39,14 +39,13 @@
 												{
 													"id": "minecraft:regeneration",
 													"amplifier": 2,
-													"duration": 96,
+													"duration": 48,
 													"show_particles": false,
 													"show_icon": false
 												},
 												{
-													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"id": "minecraft:regeneration",
+													"duration": 200,
 													"show_particles": false,
 													"show_icon": true
 												}

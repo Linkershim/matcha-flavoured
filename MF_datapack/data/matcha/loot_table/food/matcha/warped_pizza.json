@@ -11,9 +11,10 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_model": "matcha:bruschetta",
+								"minecraft:item_model": "matcha:warped_pizza",
 								"minecraft:item_name": {
-									"translate": "item.kleispack.bruschetta"
+									"translate": "item.kleispack.warped_pizza",
+									"color": "#3cc6c8"
 								},
 								"minecraft:lore": [
 									{
@@ -22,8 +23,14 @@
 										"italic": false
 									},
 									{
-										"translate": "effect.kleispack.strength_2",
-										"with": ["2:30"],
+										"translate": "effect.kleispack.invisibility",
+										"with": ["5:00"],
+										"color": "#92b7ce",
+										"italic": false
+									},
+									{
+										"translate": "effect.kleispack.strength",
+										"with": ["3:00"],
 										"color": "#e65f33",
 										"italic": false
 									}
@@ -44,9 +51,16 @@
 													"show_icon": false
 												},
 												{
+													"id": "minecraft:invisibility",
+													"amplifier": 0,
+													"duration": 6000,
+													"show_particles": false,
+													"show_icon": true
+												},
+												{
 													"id": "minecraft:strength",
-													"amplifier": 1,
-													"duration": 3000,
+													"amplifier": 0,
+													"duration": 3600,
 													"show_particles": false,
 													"show_icon": true
 												}

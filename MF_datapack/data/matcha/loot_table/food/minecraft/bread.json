@@ -29,10 +29,6 @@
 									"has_consume_particles": true,
 									"on_consume_effects": [
 										{
-											"type": "minecraft:remove_effects",
-											"effects": "#matcha:harmful"
-										},
-										{
 											"type": "minecraft:apply_effects",
 											"effects": [
 												{
@@ -43,6 +39,10 @@
 													"show_icon": false
 												}
 											]
+										},
+										{
+											"type": "minecraft:remove_effects",
+											"effects": "#matcha:harmful"
 										}
 									]
 								}
