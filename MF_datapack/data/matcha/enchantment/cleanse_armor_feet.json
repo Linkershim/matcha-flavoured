@@ -1,8 +1,12 @@
 {
-	"anvil_cost": 0,
+	"max_level": 1,
 	"description": {
 		"translate": "enchantment.kleispack.cleanses_feet"
 	},
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"slots": [
+		"armor"
+	],
 	"effects": {
 		"minecraft:tick": [
 			{
@@ -22,14 +26,10 @@
 		"base": 15,
 		"per_level_above_first": 0
 	},
-	"max_level": 1,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 0
 	},
-	"slots": [
-		"armor"
-	],
-	"supported_items": "#minecraft:enchantable/foot_armor",
+	"anvil_cost": 0,
 	"weight": 1
 }

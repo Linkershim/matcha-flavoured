@@ -1,27 +1,15 @@
 {
-	"anvil_cost": 0,
+	"max_level": 3,
 	"description": {
 		"translate": "enchantment.kleispack.traversal"
 	},
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"slots": [
+		"feet"
+	],
 	"effects": {
 		"minecraft:location_changed": [
 			{
-				"effect": {
-					"type": "minecraft:all_of",
-					"effects": [
-						{
-							"type": "minecraft:attribute",
-							"amount": {
-								"type": "minecraft:linear",
-								"base": 0.0155,
-								"per_level_above_first": 0.0155
-							},
-							"attribute": "minecraft:movement_speed",
-							"id": "matcha:enchantment.traversal",
-							"operation": "add_value"
-						}
-					]
-				},
 				"requirements": {
 					"condition": "minecraft:all_of",
 					"terms": [
@@ -140,6 +128,22 @@
 							]
 						}
 					]
+				},
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:attribute",
+							"id": "matcha:enchantment.traversal",
+							"attribute": "minecraft:movement_speed",
+							"operation": "add_value",
+							"amount": {
+								"type": "minecraft:linear",
+								"base": 0.0155,
+								"per_level_above_first": 0.0155
+							}
+						}
+					]
 				}
 			},
 			{
@@ -199,27 +203,6 @@
 		],
 		"minecraft:tick": [
 			{
-				"effect": {
-					"type": "minecraft:spawn_particles",
-					"horizontal_position": {
-						"type": "in_bounding_box"
-					},
-					"horizontal_velocity": {
-						"movement_scale": -0.2
-					},
-					"particle": {
-						"type": "minecraft:block",
-						"block_state": "minecraft:dirt"
-					},
-					"speed": 1,
-					"vertical_position": {
-						"type": "entity_position",
-						"offset": 0.1
-					},
-					"vertical_velocity": {
-						"base": 0.1
-					}
-				},
 				"requirements": {
 					"condition": "minecraft:all_of",
 					"terms": [
@@ -227,6 +210,7 @@
 							"condition": "minecraft:entity_properties",
 							"entity": "this",
 							"predicate": {
+								"periodic_tick": 5,
 								"flags": {
 									"is_flying": false,
 									"is_on_ground": true
@@ -235,8 +219,7 @@
 									"horizontal_speed": {
 										"min": 0.000009999999747378752
 									}
-								},
-								"periodic_tick": 5
+								}
 							}
 						},
 						{
@@ -267,6 +250,27 @@
 							]
 						}
 					]
+				},
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:block",
+						"block_state": "minecraft:dirt"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "entity_position",
+						"offset": 0.1
+					},
+					"horizontal_velocity": {
+						"movement_scale": -0.2
+					},
+					"vertical_velocity": {
+						"base": 0.1
+					},
+					"speed": 1
 				}
 			}
 		]
@@ -275,14 +279,10 @@
 		"base": 25,
 		"per_level_above_first": 10
 	},
-	"max_level": 3,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 1
 	},
-	"slots": [
-		"feet"
-	],
-	"supported_items": "#minecraft:enchantable/foot_armor",
+	"anvil_cost": 0,
 	"weight": 1
 }

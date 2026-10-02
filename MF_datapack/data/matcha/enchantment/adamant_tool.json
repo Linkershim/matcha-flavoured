@@ -1,23 +1,22 @@
 {
-	"anvil_cost": 0,
+	"max_level": 1,
 	"description": {
 		"translate": "enchantment.kleispack.adamant_tool",
 		"color": "gold"
 	},
-	"effects": {},
+	"supported_items": "#minecraft:enchantable/mining_loot",
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_mining",
+	"slots": [
+		"mainhand"
+	],
 	"max_cost": {
 		"base": 0,
 		"per_level_above_first": 0
 	},
-	"max_level": 1,
 	"min_cost": {
 		"base": 0,
 		"per_level_above_first": 0
 	},
-	"slots": [
-		"mainhand"
-	],
-	"supported_items": "#minecraft:enchantable/mining_loot",
+	"anvil_cost": 0,
 	"weight": 1
 }

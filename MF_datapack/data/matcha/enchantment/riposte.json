@@ -1,48 +1,17 @@
 {
-	"anvil_cost": 2,
+	"max_level": 3,
 	"description": {
 		"translate": "enchantment.kleispack.riposte"
 	},
+	"supported_items": "#matcha:enchantable/riposte",
+	"slots": [
+		"hand"
+	],
 	"effects": {
 		"minecraft:post_attack": [
 			{
-				"effect": {
-					"type": "minecraft:all_of",
-					"effects": [
-						{
-							"type": "minecraft:change_item_damage",
-							"amount": 1
-						},
-						{
-							"type": "minecraft:apply_impulse",
-							"coordinate_scale": [
-								1,
-								0,
-								1
-							],
-							"direction": [
-								0,
-								0,
-								-1
-							],
-							"magnitude": {
-								"type": "minecraft:linear",
-								"base": 0.458,
-								"per_level_above_first": 0.458
-							}
-						},
-						{
-							"type": "minecraft:play_sound",
-							"pitch": 1,
-							"sound": [
-								"minecraft:item.spear.lunge_1",
-								"minecraft:item.spear.lunge_2",
-								"minecraft:item.spear.lunge_3"
-							],
-							"volume": 1
-						}
-					]
-				},
+				"enchanted": "attacker",
+				"affected": "attacker",
 				"requirements": {
 					"condition": "minecraft:all_of",
 					"terms": [
@@ -76,8 +45,35 @@
 						}
 					]
 				},
-				"enchanted": "attacker",
-				"affected": "attacker"
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:change_item_damage",
+							"amount": 1
+						},
+						{
+							"type": "minecraft:apply_impulse",
+							"coordinate_scale": [1, 0, 1],
+							"direction": [0, 0, -1],
+							"magnitude": {
+								"type": "minecraft:linear",
+								"base": 0.458,
+								"per_level_above_first": 0.458
+							}
+						},
+						{
+							"type": "minecraft:play_sound",
+							"sound": [
+								"minecraft:item.spear.lunge_1",
+								"minecraft:item.spear.lunge_2",
+								"minecraft:item.spear.lunge_3"
+							],
+							"volume": 1,
+							"pitch": 1
+						}
+					]
+				}
 			}
 		]
 	},
@@ -85,14 +81,10 @@
 		"base": 25,
 		"per_level_above_first": 8
 	},
-	"max_level": 3,
 	"min_cost": {
 		"base": 5,
 		"per_level_above_first": 8
 	},
-	"slots": [
-		"hand"
-	],
-	"supported_items": "#matcha:enchantable/riposte",
+	"anvil_cost": 2,
 	"weight": 5
 }

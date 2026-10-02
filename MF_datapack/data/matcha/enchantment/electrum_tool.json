@@ -1,22 +1,22 @@
 {
-	"anvil_cost": 0,
+	"max_level": 3,
 	"description": {
 		"translate": "enchantment.kleispack.electrum_tool",
 		"color": "yellow"
 	},
+	"supported_items": "#minecraft:enchantable/mining_loot",
 	"exclusive_set": "#minecraft:exclusive_set/mining",
+	"slots": [
+		"mainhand"
+	],
 	"max_cost": {
 		"base": 1,
 		"per_level_above_first": 1
 	},
-	"max_level": 3,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 1
 	},
-	"slots": [
-		"mainhand"
-	],
-	"supported_items": "#minecraft:enchantable/mining_loot",
+	"anvil_cost": 0,
 	"weight": 3
 }

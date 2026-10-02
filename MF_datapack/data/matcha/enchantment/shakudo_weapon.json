@@ -1,13 +1,19 @@
 {
-	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
-	"anvil_cost": 0,
+	"max_level": 1,
 	"description": {
 		"translate": "enchantment.kleispack.shakudo_weapon",
 		"color": "#c96691"
 	},
+	"supported_items": "#minecraft:enchantable/weapon",
+	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
+	"slots": [
+		"mainhand"
+	],
 	"effects": {
 		"minecraft:post_attack": [
 			{
+				"enchanted": "attacker",
+				"affected": "attacker",
 				"requirements": {
 					"condition": "minecraft:inverted",
 					"term": {
@@ -21,13 +27,11 @@
 				"effect": {
 					"type": "minecraft:apply_mob_effect",
 					"to_apply": "minecraft:regeneration",
-					"min_duration": 1,
-					"max_duration": 1,
 					"min_amplifier": 2,
-					"max_amplifier": 2
-				},
-				"enchanted": "attacker",
-				"affected": "attacker"
+					"max_amplifier": 2,
+					"min_duration": 1,
+					"max_duration": 1
+				}
 			}
 		]
 	},
@@ -35,14 +39,10 @@
 		"base": 0,
 		"per_level_above_first": 0
 	},
-	"max_level": 1,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 0
 	},
-	"slots": [
-		"mainhand"
-	],
-	"supported_items": "#minecraft:enchantable/weapon",
+	"anvil_cost": 0,
 	"weight": 1
 }

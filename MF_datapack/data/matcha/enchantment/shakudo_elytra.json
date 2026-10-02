@@ -1,10 +1,15 @@
 {
-	"exclusive_set": "#matcha:exclusive_set/intrinsic_armor",
-	"anvil_cost": 0,
+	"max_level": 1,
 	"description": {
 		"translate": "enchantment.kleispack.shakudo_elytra",
 		"color": "#e85e8f"
 	},
+	"supported_items": "minecraft:elytra",
+	"exclusive_set": "#matcha:exclusive_set/intrinsic_armor",
+	"slots": [
+		"mainhand",
+		"armor"
+	],
 	"effects": {
 		"minecraft:tick": [
 			{
@@ -26,17 +31,10 @@
 		"base": 1,
 		"per_level_above_first": 0
 	},
-	"max_level": 1,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 0
 	},
-	"slots": [
-		"mainhand",
-		"armor"
-	],
-	"supported_items": [
-		"minecraft:elytra"
-	],
+	"anvil_cost": 0,
 	"weight": 1
 }

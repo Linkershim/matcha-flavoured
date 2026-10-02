@@ -1,23 +1,27 @@
 {
-	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
-	"anvil_cost": 0,
+	"max_level": 1,
 	"description": {
 		"translate": "enchantment.kleispack.adamant_weapon",
 		"color": "#b6a09a"
 	},
+	"supported_items": "#minecraft:enchantable/weapon",
+	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
+	"slots": [
+		"mainhand"
+	],
 	"effects": {
 		"minecraft:post_attack": [
 			{
+				"enchanted": "attacker",
+				"affected": "victim",
 				"effect": {
 					"type": "minecraft:apply_mob_effect",
 					"to_apply": "minecraft:weakness",
-					"min_duration": 8,
-					"max_duration": 12,
 					"min_amplifier": 1,
-					"max_amplifier": 1
-				},
-				"enchanted": "attacker",
-				"affected": "victim"
+					"max_amplifier": 1,
+					"min_duration": 8,
+					"max_duration": 12
+				}
 			}
 		]
 	},
@@ -25,14 +29,10 @@
 		"base": 0,
 		"per_level_above_first": 0
 	},
-	"max_level": 1,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 0
 	},
-	"slots": [
-		"mainhand"
-	],
-	"supported_items": "#minecraft:enchantable/weapon",
+	"anvil_cost": 0,
 	"weight": 1
 }

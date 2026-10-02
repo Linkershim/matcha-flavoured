@@ -1,19 +1,23 @@
 {
-	"anvil_cost": 0,
+	"max_level": 3,
 	"description": {
 		"translate": "enchantment.kleispack.reach"
 	},
+	"supported_items": "#minecraft:enchantable/chest_armor",
+	"slots": [
+		"chest"
+	],
 	"effects": {
 		"minecraft:attributes": [
 			{
-				"attribute": "minecraft:block_interaction_range",
 				"id": "matcha:enchantments/reach",
+				"attribute": "minecraft:block_interaction_range",
+				"operation": "add_value",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 2,
 					"per_level_above_first": 2
-				},
-				"operation": "add_value"
+				}
 			}
 		]
 	},
@@ -21,14 +25,10 @@
 		"base": 15,
 		"per_level_above_first": 0
 	},
-	"max_level": 3,
 	"min_cost": {
 		"base": 1,
 		"per_level_above_first": 0
 	},
-	"slots": [
-		"chest"
-	],
-	"supported_items": "#minecraft:enchantable/chest_armor",
+	"anvil_cost": 0,
 	"weight": 1
 }
