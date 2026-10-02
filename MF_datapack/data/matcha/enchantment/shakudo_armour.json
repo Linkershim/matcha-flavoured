@@ -7,7 +7,6 @@
 	"supported_items": "#matcha:enchantable/shakudo_armour",
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_armor",
 	"slots": [
-		"mainhand",
 		"armor"
 	],
 	"effects": {
@@ -22,7 +21,7 @@
 				},
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "matcha:enchantment_effects/shakudo_armour"
+					"function": "matcha:enchantment_effects/shakudo_effects/regeneration/add_1_power"
 				}
 			}
 		]

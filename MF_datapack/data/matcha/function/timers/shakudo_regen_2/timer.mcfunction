@@ -1,2 +1,0 @@
-stopwatch restart minecraft:shakudo_regen_2
-function matcha:timers/shakudo_regen_2/on_restart

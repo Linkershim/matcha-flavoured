@@ -7,7 +7,6 @@
 	"supported_items": "minecraft:elytra",
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_armor",
 	"slots": [
-		"mainhand",
 		"armor"
 	],
 	"effects": {
@@ -22,7 +21,7 @@
 				},
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "matcha:enchantment_effects/shakudo_elytra"
+					"function": "matcha:enchantment_effects/shakudo_effects/regeneration/add_5_power"
 				}
 			}
 		]

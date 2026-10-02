@@ -1,1 +1,0 @@
-execute as @a[scores={shakudo_regen=2}] at @s run effect give @s minecraft:regeneration 3 0 true

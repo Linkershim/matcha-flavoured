@@ -69,22 +69,12 @@ scoreboard players set $Max warding_equipment 3
 scoreboard objectives add adamant_armour dummy
 scoreboard players set 0 adamant_armour 0
 
-# Shakudo TO BE CHANGED
+# Shakudo
 scoreboard objectives add shakudo_regen dummy
-scoreboard players set 0 shakudo_regen 0
+scoreboard objectives add ShakudoRegenCooldown dummy
 
 #Used for Adamant and Electrum Armour
 stopwatch create divinity
-
-#Used for Shakudo Armour
-stopwatch create shakudo_regen_1
-stopwatch create shakudo_regen_2
-stopwatch create shakudo_regen_3
-stopwatch create shakudo_regen_4
-stopwatch create shakudo_regen_5
-stopwatch create shakudo_regen_6
-stopwatch create shakudo_regen_7
-stopwatch create shakudo_regen_8
 
 # Anemos enchantment
 scoreboard objectives add AnemosCooldown dummy

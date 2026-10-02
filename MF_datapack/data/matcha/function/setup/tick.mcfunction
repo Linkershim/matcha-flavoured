@@ -1,5 +1,7 @@
 # Run functions
 
+execute as @a[scores={shakudo_regen=1..}] run function matcha:enchantment_effects/shakudo_effects/regeneration/apply
+
 function matcha:environmental/check_freezing_water_conditions
 function matcha:environmental/nether_water
 function matcha:environmental/village_eerie_sound
@@ -24,3 +26,8 @@ function matcha:update_old_items/check_trigger
 execute as @a if score @s AnemosCooldown matches 1.. run scoreboard players remove @s AnemosCooldown 1
 execute as @a if score @s CrystalHeartCooldown matches 1.. run scoreboard players remove @s CrystalHeartCooldown 1
 execute as @a if score @s AuraWindup matches 0.. run scoreboard players remove @s AuraWindup 1
+execute as @a if score @s ShakudoRegenCooldown matches 0.. run scoreboard players remove @s ShakudoRegenCooldown 1
+
+# Reset counts
+# * empties the entire scoreboard
+scoreboard players reset * shakudo_regen
