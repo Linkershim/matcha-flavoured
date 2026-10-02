@@ -1,5 +1,4 @@
 {
-	"primary_items": "#minecraft:axes",
 	"anvil_cost": 0,
 	"description": {
 		"translate": "enchantment.kleispack.bloodrage"
@@ -26,6 +25,6 @@
 	"slots": [
 		"mainhand"
 	],
-	"supported_items": "#minecraft:axes",
+	"supported_items": "#matcha:enchantable/bloodrage",
 	"weight": 1
 }

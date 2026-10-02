@@ -1,9 +1,5 @@
 {
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
-	"primary_items": [
-		"minecraft:stone_sword",
-		"minecraft:stone_spear"
-	],
 	"anvil_cost": 0,
 	"description": {
 		"translate": "enchantment.kleispack.shakudo_weapon",

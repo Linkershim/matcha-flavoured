@@ -1,8 +1,5 @@
 {
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_armor",
-	"primary_items": [
-		"minecraft:elytra"
-	],
 	"anvil_cost": 0,
 	"description": {
 		"translate": "enchantment.kleispack.shakudo_elytra",

@@ -35,14 +35,6 @@
 	"slots": [
 		"mainhand"
 	],
-	"supported_items": [
-		"minecraft:wooden_sword",
-		"minecraft:stone_sword",
-		"minecraft:copper_sword",
-		"minecraft:iron_sword",
-		"minecraft:diamond_sword",
-		"minecraft:netherite_sword",
-		"minecraft:stick"
-	],
+	"supported_items": "#matcha:enchantable/anemos",
 	"weight": 1
 }

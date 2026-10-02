@@ -1,6 +1,5 @@
 {
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_weapon",
-	"primary_items": "#minecraft:enchantable/weapon",
 	"anvil_cost": 0,
 	"description": {
 		"translate": "enchantment.kleispack.adamant_weapon",

@@ -93,6 +93,6 @@
 	"slots": [
 		"hand"
 	],
-	"supported_items": "minecraft:stone_sword",
+	"supported_items": "#matcha:enchantable/riposte",
 	"weight": 5
 }

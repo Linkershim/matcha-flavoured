@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:axes",
+    "#minecraft:swords",
+    "minecraft:shield",
+    "minecraft:popped_chorus_fruit",
+    "minecraft:poisonous_potato"
+  ]
+}

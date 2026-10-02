@@ -53,6 +53,6 @@
 	"slots": [
 		"mainhand"
 	],
-	"supported_items": "#minecraft:enchantable/weapon",
+	"supported_items": "#matcha:enchantable/slaughter",
 	"weight": 1
 }

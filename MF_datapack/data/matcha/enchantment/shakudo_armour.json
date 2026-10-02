@@ -1,12 +1,5 @@
 {
 	"exclusive_set": "#matcha:exclusive_set/intrinsic_armor",
-	"primary_items": [
-		"minecraft:copper_helmet",
-		"minecraft:copper_chestplate",
-		"minecraft:copper_leggings",
-		"minecraft:copper_boots",
-		"minecraft:elytra"
-	],
 	"anvil_cost": 0,
 	"description": {
 		"translate": "enchantment.kleispack.shakudo_armour",
@@ -42,12 +35,6 @@
 		"mainhand",
 		"armor"
 	],
-	"supported_items": [
-		"minecraft:copper_helmet",
-		"minecraft:copper_chestplate",
-		"minecraft:copper_leggings",
-		"minecraft:copper_boots",
-		"minecraft:elytra"
-	],
+	"supported_items": "#matcha:enchantable/shakudo_armour",
 	"weight": 1
 }

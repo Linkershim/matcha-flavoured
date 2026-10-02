@@ -33,20 +33,6 @@
 		"mainhand",
 		"offhand"
 	],
-	"supported_items": [
-		"minecraft:wooden_sword",
-		"minecraft:stone_sword",
-		"minecraft:iron_sword",
-		"minecraft:diamond_sword",
-		"minecraft:netherite_sword",
-		"minecraft:popped_chorus_fruit",
-		"minecraft:shield",
-		"minecraft:wooden_axe",
-		"minecraft:stone_axe",
-		"minecraft:iron_axe",
-		"minecraft:diamond_axe",
-		"minecraft:netherite_axe",
-		"minecraft:poisonous_potato"
-	],
+	"supported_items": "#matcha:enchantable/warding",
 	"weight": 1
 }
