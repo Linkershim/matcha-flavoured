@@ -1,5 +1,5 @@
 {
 	"values": [
-		"matcha:setup/tick"
+		"matcha:timers/tick"
 	]
 }
