@@ -1,1 +1,1 @@
-scoreboard players set @s sneaking 0
+scoreboard players reset @s sneaking

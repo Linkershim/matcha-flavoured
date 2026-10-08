@@ -2,17 +2,8 @@
 # This function is used to set up Scoreboards and their Global Variables
 # Players' initial scores are applied in "matcha:setup/scoreboard/player_setup"
 
+# Used for Zephyr enchantment effect
 scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
-scoreboard players set 0 sneaking 0
-scoreboard players set 5 sneaking 5
-scoreboard players set 10 sneaking 10
-scoreboard players set 15 sneaking 15
-scoreboard players set 20 sneaking 20
-scoreboard players set 25 sneaking 25
-scoreboard players set 30 sneaking 30
-scoreboard players set 35 sneaking 35
-scoreboard players set 40 sneaking 40
-scoreboard players set 45 sneaking 45
 
 scoreboard objectives add Hunger food
 scoreboard objectives add HealthPoints health
