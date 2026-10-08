@@ -24,7 +24,7 @@
 					"effects": [
 						{
 							"type": "minecraft:run_function",
-							"function": "matcha:enchantment_effects/zephyr"
+							"function": "matcha:enchantment_effects/zephyr/charge_indicator"
 						},
 						{
 							"type": "minecraft:apply_mob_effect",
@@ -131,7 +131,7 @@
 				},
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "matcha:enchantment_effects/zephyr_execute"
+					"function": "matcha:enchantment_effects/zephyr/execute"
 				}
 			},
 			{
@@ -166,7 +166,7 @@
 				},
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "matcha:enchantment_effects/zephyr_failure"
+					"function": "matcha:enchantment_effects/zephyr/failure"
 				}
 			}
 		]
