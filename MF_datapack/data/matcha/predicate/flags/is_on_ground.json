@@ -1,3 +1,4 @@
+
 {
 	"type": "minecraft:all_of",
 	"terms": [
@@ -5,8 +6,8 @@
 			"type": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"minecraft:effects": {
-					"minecraft:slow_falling": {}
+				"flags": {
+					"is_on_ground": true
 				}
 			}
 		}

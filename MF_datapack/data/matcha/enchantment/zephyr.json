@@ -23,10 +23,6 @@
 					"type": "minecraft:all_of",
 					"effects": [
 						{
-							"type": "minecraft:run_function",
-							"function": "matcha:enchantment_effects/zephyr/charge_indicator"
-						},
-						{
 							"type": "minecraft:apply_mob_effect",
 							"to_apply": "minecraft:jump_boost",
 							"min_amplifier": 6,
@@ -101,16 +97,6 @@
 					"type": "minecraft:all_of",
 					"terms": [
 						{
-							"type": "minecraft:entity_properties",
-							"entity": "this",
-							"predicate": {
-								"flags": {
-									"is_sneaking": false,
-									"is_on_ground": false
-								}
-							}
-						},
-						{
 							"type": "minecraft:float_value_check",
 							"value": {
 								"type": "minecraft:enchantment_level",
@@ -128,7 +114,7 @@
 				},
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "matcha:enchantment_effects/zephyr/execute"
+					"function": "matcha:enchantment_effects/zephyr/apply"
 				}
 			}
 		]

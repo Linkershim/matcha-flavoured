@@ -2,8 +2,6 @@
 # This function is used to set up Scoreboards and their Global Variables
 # Players' initial scores are applied in "matcha:setup/scoreboard/player_setup"
 
-# Used for Zephyr enchantment effect
-scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
 
 scoreboard objectives add Hunger food
 scoreboard objectives add HealthPoints health
@@ -72,6 +70,9 @@ stopwatch create divinity
 
 # Anemos enchantment
 scoreboard objectives add AnemosCooldown dummy
+
+# Zephyr enchantment
+scoreboard objectives add ZephyrCharge dummy
 
 #Used mostly for particles
 stopwatch create 3s
